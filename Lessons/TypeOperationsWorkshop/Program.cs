@@ -4,13 +4,17 @@ class Program
 {
 	static void Main(string[] args)
 	{
-		Console.WriteLine("Перевод байтов в килобайты");
-		double bites = 3500;
-		Console.WriteLine("Байты: " + bites);
-		double kilobites = bites / 1024;
-		Console.WriteLine("Килобайты: " + kilobites);
+		//double TransferBitesToKilobites(double bites)
+
+		
+		Console.WriteLine("Килобайты: " + TransferBitesToKilobites(3500));
+		Console.WriteLine();
+		Console.WriteLine("Килобайты: " + TransferBitesToKilobites(4300));
+		Console.WriteLine();
+		Console.WriteLine("Килобайты: " + TransferBitesToKilobites(900));
 		Console.WriteLine();
 		
+		//void ShowHoursAndMinutesByTotalMinutes(double minutes)
 		Console.WriteLine("Перевод часы в минуты");
 		double minutes = 94;
 		Console.WriteLine("Минуты: " + minutes);
@@ -20,6 +24,7 @@ class Program
 		Console.WriteLine("Минут: " + minutes);
 		Console.WriteLine();
 		
+		//double CalculationAverage(double firstNumber, double secondNumber, double thirdNumber)
 		Console.WriteLine("Вычисление среднеарифмитического");
 		double firstNumber = 3;
 		Console.WriteLine("Первое число: " + firstNumber);
@@ -31,6 +36,7 @@ class Program
 		Console.WriteLine("Среднеарифмитическое: " + average);
 		Console.WriteLine();
 		
+		//double CalculationSquarePerimetr(double squareSide)
 		Console.WriteLine("Вычисление периметра квадрата");
 		double squareSide = 5;
 		Console.WriteLine("Сторона квадрата: " + squareSide);
@@ -38,6 +44,7 @@ class Program
 		Console.WriteLine("Периметр квадрата: " + squarePerimetr);
 		Console.WriteLine();
 		
+		//double TransferKilometersToMeters(double meters)
 		Console.WriteLine("Перевод км в м");
 		double kilometers = 10;
 		Console.WriteLine("Километры: " + kilometers);
@@ -45,6 +52,7 @@ class Program
 		Console.WriteLine("Метры: " + meters);
 		Console.WriteLine();
 		
+		//double SearchRectangleSquare(double a , double b)
 		Console.WriteLine("Поиск площади прямоугольника");
 		double a = 2;
 		Console.WriteLine("a: " + a);
@@ -56,13 +64,15 @@ class Program
 		Console.WriteLine("Площадь прямоугольника: " + rectangleSquare);
 		Console.WriteLine();
 		
-		Console.WriteLine("Поиск площади");
-		double radius = 9;
-		Console.WriteLine("Радиус: " + radius);
-		double square = Math.PI * radius * radius;
-		Console.WriteLine("Площадь: " + square);
+		//double SearchSqareCircle(double radiusCircle)
+		Console.WriteLine("Поиск площади круга");
+		double radiusCircle = 9;
+		Console.WriteLine("Радиус круга: " + radiusCircle);
+		double squareCircle = Math.PI * radiusCircle * radiusCircle;
+		Console.WriteLine("Площадь круга: " + squareCircle);
 		Console.WriteLine();
 		
+		//double TransferCelsiusToFahrenheit(double celsius)
 		Console.WriteLine("Перевод градусов цельсия в Фаренгейта");
 		double celsius = 22.5;
 		Console.WriteLine("Градусы по цельсию: " + celsius);
@@ -70,18 +80,21 @@ class Program
         Console.WriteLine("Температура по фаренгейту: " + fahrenheit);
 		Console.WriteLine();
 		
+		//char GetNextSymbolAscii(char symbol)
 		Console.WriteLine("Получение следующего символа в ASCII таблице по заданному");
 		char symbol = 'Q';
 		Console.WriteLine("Заданый символ: " + symbol);
 		char nextSymbol = (char)(symbol + 1);
 		Console.WriteLine("Следующий символ: " + nextSymbol);
 		
+		//void ShowAsciiSymbolByNumber(int charNumber)
 		Console.WriteLine("Вывод символа по номеру из таблицы ASCII");
 		int charNumber = 97;
 		Console.WriteLine("Номер символа: " + charNumber);
 		char charByNumber = (char) charNumber;
 		Console.WriteLine("Символ: " + charByNumber);
 		
+		//double GetProductPriceWithDiscount(double price , int discount)
 		Console.WriteLine("Расчет стоимости товара");
 		double price = 1000;
 		Console.WriteLine("Цена: " + price);
@@ -89,6 +102,15 @@ class Program
 		Console.WriteLine("Скидка: " + discount);
 		double cost = price - price * discount / 100;
 		Console.WriteLine("Итоговая стоимость: " + cost);
+	}
+	
+	static double TransferBitesToKilobites(double bites)
+	{
+		Console.WriteLine("Перевод байтов в килобайты");
+		Console.WriteLine("Байты: " + bites);
+		double kilobites = bites / 1024;
+		
+		return kilobites;
 	}
 	
 }
